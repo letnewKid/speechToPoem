@@ -24,7 +24,7 @@ mic.addEventListener("click", function() {
 speechRecognition.onresult = function(event) {
     const song = event.results[0][0].transcript
     const poem=generatePoem(song);
-    alert("This is your poem:"+"\n"+poem)
+    alert("This is your poem:"+"\n"+poem) // figure out how to output this to a text box
     
 }
 
